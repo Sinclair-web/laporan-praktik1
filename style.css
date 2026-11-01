@@ -1,0 +1,226 @@
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4faf7;
+    color: #1b2f27;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    background: #ffffff;
+    border-bottom: 1px solid #d7e8df;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.logo span,
+.section h2 span {
+    color: #187a51;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: #5a6f66;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.nav-menu a:hover {
+    color: #187a51;
+}
+
+/* Hero */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 7%;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.greeting {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #bfe3cf;
+    border-radius: 30px;
+    color: #187a51;
+    background: #e7f5ee;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    color: #187a51;
+    line-height: 1.2;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.hero p {
+    color: #5a6f66;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #187a51;
+    color: #ffffff;
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #12613f;
+    transform: translateY(-3px);
+}
+
+/* Foto Profil */
+.hero-image {
+    width: 320px;
+    height: 320px;
+    border: 5px solid #bfe3cf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e7f5ee, #d7f0e3);
+    box-shadow: 0 0 35px rgba(24, 122, 81, 0.18);
+    flex-shrink: 0;
+}
+
+.profile-circle {
+    font-size: 85px;
+    font-weight: bold;
+    color: #187a51;
+}
+
+/* Section */
+.section {
+    padding: 75px 10%;
+    text-align: center;
+    border-top: 1px solid #d7e8df;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.section p {
+    color: #5a6f66;
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Card */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #d7e8df;
+    box-shadow: 0 6px 18px rgba(24, 122, 81, 0.06);
+}
+
+.card h3 {
+    color: #187a51;
+    font-size: 22px;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list div {
+    background: #e7f5ee;
+    border: 1px solid #bfe3cf;
+    padding: 12px 25px;
+    border-radius: 10px;
+    color: #12613f;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #0d3b2a;
+    text-align: center;
+    padding: 25px;
+    color: #d7f2e2;
+    font-size: 17px;
+}
+
+/* Tampilan Mobile */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero-image {
+        width: 220px;
+        height: 220px;
+    }
+}
